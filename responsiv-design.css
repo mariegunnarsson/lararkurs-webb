@@ -64,7 +64,6 @@ footer {
     display: inline-block;
     padding: 0 1em;
 }
-
     article {
     flex: 6 6 400px;
         
@@ -79,8 +78,21 @@ footer {
     display: block;
 }
 }
-
-
+@media all and (max-width: 500px){
+    
+    article{
+        flex: 0 0 100%;
+    }
+    aside{
+        flex: 0 0 100%;
+        min-height: 3em;
+    }
+    article > h2::after{
+    color: red;
+    content: 500px;
+    display: block;
+}
+}
 
 
 
