@@ -93,6 +93,16 @@ footer {
     display: block;
 }
 }
+@media all and (max-width: 450px) {
+        nav ul{
+            max-width: 60%;
+            margin: auto;
+            
+        }
+    
+}
+
+
 
 
 
