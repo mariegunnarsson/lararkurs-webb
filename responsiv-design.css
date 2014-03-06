@@ -21,15 +21,20 @@ h1 {
 }
 main {
     min-hight: 300px;
+    display: flex;
+    flex-direction: row;  /*default är row*/
     
 }
 nav {
-    
+    background-color: hsl (347, 87%, 70%);
+    flex: 1 1 120px; 
 }
 article {
-    
+    flex: 5 2 840px;
 }
 aside {
+    background-color: hsl (347, 90%, 60%);
+    flex: 1 1 240px;
    
 }
 footer {
