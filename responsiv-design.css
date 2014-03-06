@@ -20,25 +20,56 @@ h1 {
     text-align: center;
 }
 main {
-    min-hight: 300px;
+    min-height: 300px;
     display: flex;
     flex-direction: row;  /*default är row*/
     
 }
+
+
 nav {
-    background-color: hsl (347, 87%, 70%);
+    background-color: hsl(347, 87%, 70%);
     flex: 1 1 120px; 
 }
+
+
 article {
     flex: 5 2 840px;
 }
+
 aside {
-    background-color: hsl (347, 90%, 60%);
+    background-color: hsl(347, 90%, 60%);
     flex: 1 1 240px;
    
 }
+
 footer {
     background-color: hsl(99, 79%, 68%);
     text-align: center;
 }
+
+@media all and (max-width: 800px){
+    main {
+	flex-wrap: wrap;
+	min-height: 0;
+
+}
+   nav {
+    flex: 0 0 100%
+}
+    nav ul{
+        text-align: center;
+    }
+nav li {
+    display: inline-block;
+    padding: 0 1em;
+}
+    article {
+        
+    }
+}
+
+
+
+
 
